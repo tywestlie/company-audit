@@ -2,7 +2,8 @@ require 'date'
 #
 module DateHandler
   require 'date'
-  #
+  attr_reader :date
+  
   class DHDate
     def initialize(initial_date)
       @date = initial_date
