@@ -23,5 +23,9 @@ class CompanyTest < Minitest::Test
 
   def test_load_employees
     company = Company.new
+    company_employees = company.load_employees('./data/employees.csv')
+    require 'pry'; binding.pry
 
+    assert_equal [], company_employees.employees
+  end
 end
