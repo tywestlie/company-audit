@@ -14,5 +14,5 @@ class Employee
     @start_date = DateHandler.string_to_date(start_date)
     @end_date = DateHandler.string_to_date(end_date)
   end
-  
+
 end
